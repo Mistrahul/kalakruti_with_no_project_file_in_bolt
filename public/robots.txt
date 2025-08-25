@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /staging/
+Allow: /portfolio/
+Allow: /blog/
+Sitemap: https://kalakrutiassociates.com/sitemap.xml
