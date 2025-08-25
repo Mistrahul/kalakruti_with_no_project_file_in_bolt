@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll Animation Classes */
+.scroll-animate.animate-in {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Performance optimizations */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure all CTA buttons meet minimum touch target size */
+.cta-button,
+button,
+a[role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 16px;
+}
+
+/* Phone number links styling */
+a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^="tel:"]:hover {
+  color: #f97316;
+  transition: color 0.2s ease;
+}
+
+/* Floating button animations */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.whatsapp-float-btn,
+.call-float-btn {
+  position: relative;
+  overflow: visible;
+}
